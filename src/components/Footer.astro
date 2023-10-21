@@ -1,0 +1,85 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer>
+  <hr />
+  <div class="footer-container">
+    <div class="footer-left">
+      <p class="footer-title">Email</p>
+      <a href="mailto:riwane.aberkane.pro@gamail.com"
+        >riwane.aberkane.pro@gmail.com</a
+      >
+    </div>
+    <div class="footer-right">
+      <p class="footer-title">Suivez-moi</p>
+      <div class="logo-contact">
+        <a
+          href="https://www.linkedin.com/in/riwane-aberkane-153b83262/"
+          target="_blank"
+          aria-label="Voir ma page Linkedin"
+        >
+          <img src="public/linkedin.svg" alt="Logo Linkedin" /></a
+        >
+        <a
+          href="https://github.com/RiwaneAberkane?tab=repositories"
+          target="_blank"
+          aria-label="Voir ma page Github"
+        >
+          <img src="public/github.svg" alt="Logo Github" /></a
+        >
+      </div>
+    </div>
+  </div>
+</footer>
+<style>
+  hr {
+    margin-top: 1.5rem;
+    color: white;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-left {
+    border: 3px solid #78c2ad;
+    border-radius: 10px;
+    width: 45%;
+    padding-block: 4rem;
+    margin: 1.5rem 0;
+  }
+
+  .footer-title {
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+  }
+
+  .footer-right {
+    border: 3px solid #78c2ad;
+    border-radius: 10px;
+    width: 45%;
+    padding-block: 4rem;
+    margin: 1.5rem 0;
+  }
+
+  div {
+    text-align: center;
+  }
+
+  .logo-contact {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  img {
+    width: 3rem;
+  }
+</style>

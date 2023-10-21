@@ -1,0 +1,137 @@
+---
+import Layout from "../layouts/Layout.astro";
+const pageTitle = "Riwane Aberkane";
+---
+
+<Layout pageTitle={pageTitle}>
+  <div class="about-me-top">
+    <div>
+      <h1>Riwane Aberkane</h1>
+      <small>Développeur web junior</small>
+    </div>
+
+    <div class="gif">
+      <img width="250" height="230" alt="RaccoonSpaceGif" src="/cat.gif" />
+    </div>
+  </div>
+  <h2>À propos de moi</h2>
+  <p>
+    Salut, je suis Riwane Aberkane, un développeur web junior âgé de 23 ans. Mon
+    voyage dans le monde du code a commencé avec une passion brûlante pour les
+    possibilités infinies que l'univers numérique a à offrir. Du front-end au
+    back-end, je suis un explorateur déterminé, cherchant constamment à
+    repousser les limites de mes compétences.
+  </p>
+  <p>
+    Je suis convaincu que le code est bien plus qu'une simple suite de
+    commandes. C'est un art, un moyen d'exprimer des idées, de créer des
+    expériences interactives et de donner vie à des rêves numériques. Je mets en
+    œuvre ma créativité à chaque projet, transformant des lignes de code en
+    véritables toiles numériques. Mon but ultime est de créer des sites web
+    innovants qui transforment les utilisateurs en voyageurs dans un monde
+    virtuel où les pixels deviennent des émotions.
+  </p>
+  <div class="button">
+    <a href="/works/">
+      <button>Mon portfolio</button>
+    </a>
+  </div>
+
+  <h2>Skills</h2>
+  <div class="link-images">
+    <img
+      width="46"
+      height="46"
+      alt="TypeScript"
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
+    />
+    <img
+      width="46"
+      height="46"
+      alt="JavaScript"
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+    />
+    <img
+      width="46"
+      height="46"
+      alt="CSS"
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
+    />
+    <img
+      width="46"
+      height="46"
+      alt="HTML"
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
+    />
+    <img
+      width="46"
+      height="46"
+      alt="Angular"
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg"
+    />
+    <img
+      width="46"
+      height="46"
+      alt="Bootstrap"
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
+    />
+    <img
+      width="46"
+      height="46"
+      alt="PostGres"
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"
+    />
+  </div>
+</Layout>
+<style>
+  /*about me top*/
+  .about-me-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* small */
+  small {
+    background-color: #584966;
+    color: #fdebf3;
+    border-radius: 6px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    padding: 0.3em 0.6em 0.2em;
+  }
+
+  /* Button */
+  button {
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid #78c2ad;
+    border-radius: 8px;
+    color: #fdebf3;
+    font:
+      600 16px "Josefin Sans",
+      sans-serif;
+    padding: 8px 16px;
+    margin: 25px 0;
+    transition:
+      background-color 0.4s,
+      color 0.4s;
+  }
+
+  button:hover {
+    background-color: #78c2ad;
+    color: #1e1e2e;
+    cursor: pointer;
+  }
+
+  /* Skill images */
+  .link-images img {
+    margin: 16px 4px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .link-images img {
+      height: 30px;
+      width: 30px;
+      margin: 16px 1px;
+    }
+  }
+</style>
