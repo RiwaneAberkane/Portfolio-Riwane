@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+const pageTitle = "Blog";
+---
+
+<Layout pageTitle={pageTitle}>
+  <div class="gif">
+    <img width="300" height="259" alt="RaccoonLaptopGif" src="/blog.webp" />
+  </div>
+  <h2>Blog</h2>
+  <ul role="list" class="link-card-grid">
+    <Card
+      href="https://medium.com/"
+      image="/GitHub.webp"
+      title="Simplon"
+      body="Mon expérience en tant qu'apprenti chez Simplon... (À venir)"
+    />
+  </ul>
+  <!-- <h2>YouTube</h2>
+  <ul role="list" class="link-card-grid">
+    <Card
+      href="https://www.youtube.com/"
+      image="/youtube.png"
+      title="Video 1"
+      body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
+    />
+  </ul> -->
+</Layout>
