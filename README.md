@@ -40,7 +40,3 @@ Edit the HTML files in the `src/pages` directory to add your projects, experienc
 │   └── env.d.ts
 └── package.json
 ```
-
-## 📃 License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
