@@ -94,12 +94,12 @@ html.light {
     color: #1e1e2e; 
 }
 
-.light button {
+.light .button button  {
     color: #1e1e2e;
 }
 
-.light .logo-contact img{
-    background-color: #1e1e2e;
+.light .logo-contact a img{
+    color: #1e1e2e;
 }
 
 .light .footer-container a{
