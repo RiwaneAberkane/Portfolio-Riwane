@@ -38,8 +38,7 @@ h2 {
 
 /* Paragraphs */
 p {
-    font-size: 1.1em;
-    hyphens: auto;
+    font-size: 1em;
     line-height: 1.5;
     font-family: 'Poppins', sans-serif; 
 }
