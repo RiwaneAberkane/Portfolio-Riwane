@@ -1,35 +1,40 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import Modal from "../components/Modal.astro";
 const pageTitle = "Projets";
+
+const projects = [
+  {
+    image: "/biomarket.png",
+    title: "Biomarket",
+    body: "Conception d'une application de gestion de stock pour une entreprise fictive en utilisant la stack MERN afin de valider mon titre de développeur web et web mobile.",
+  },
+  {
+    image: "/restaurantApp.png",
+    title: "Restaurant App",
+    body: "Création d'une application React qui utilise les hooks afin d'enregistrer les restaurants préférés des utilisateurs via le stockage local.",
+  },
+  {
+    image: "/selfCare.png",
+    title: "CitatioNinja",
+    body: "Développement d'une petite application en JavaScript qui génère des citations inspirantes pour égayer votre journée.",
+  },
+  {
+    image: "/maquetteSimplon.png",
+    title: "Maquette Simplon",
+    body: "Création d'un site web avec une version responsive en utilisant HTML et CSS, en m'inspirant d'une maquette Figma pour assurer une conception harmonieuse sur différentes tailles d'écrans.",
+  },
+];
 ---
 
 <Layout pageTitle={pageTitle}>
   <h2>Projets</h2>
   <ul role="list" class="link-card-grid">
-    <Card
-      href="https://github.com/RiwaneAberkane/Biomarket_MERN"
-      image="/biomarket.png"
-      title="Biomarket"
-      body="Conception d'une application de gestion de stock pour une entreprise fictive en utilisant la stack MERN afin de valider mon titre de développeur web et web mobile."
-    />
-    <Card
-      href="https://github.com/RiwaneAberkane/restaurant-app"
-      image="/restaurantApp.png"
-      title="Restaurant App"
-      body="Création d'une application React qui utilise les hooks afin d'enregistrer les restaurants préférés des utilisateurs via le stockage local."
-    />
-    <Card
-      href="https://github.com/RiwaneAberkane/self-care-center"
-      image="/selfCare.png"
-      title="CitatioNinja"
-      body="Développement d'une petite application en JavaScript qui génère des citations inspirantes pour égayer votre journée."
-    />
-    <Card
-      href="https://github.com/RiwaneAberkane/MaquetteSimplon"
-      image="/maquetteSimplon.png"
-      title="Maquette Simplon"
-      body="Création d'un site web avec une version responsive en utilisant HTML et CSS, en m'inspirant d'une maquette Figma pour assurer une conception harmonieuse sur différentes tailles d'écrans."
-    />
+    {
+      projects.map((item) => (
+        <Card image={item.image} title={item.title} body={item.body} />
+      ))
+    }
   </ul>
 </Layout>
