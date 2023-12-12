@@ -6,21 +6,25 @@ const pageTitle = "Projets";
 
 const projects = [
   {
+    id: "0",
     image: "/biomarket.png",
     title: "Biomarket",
     body: "Conception d'une application de gestion de stock pour une entreprise fictive en utilisant la stack MERN afin de valider mon titre de développeur web et web mobile.",
   },
   {
+    id: 1,
     image: "/restaurantApp.png",
     title: "Restaurant App",
     body: "Création d'une application React qui utilise les hooks afin d'enregistrer les restaurants préférés des utilisateurs via le stockage local.",
   },
   {
+    id: 2,
     image: "/selfCare.png",
     title: "CitatioNinja",
     body: "Développement d'une petite application en JavaScript qui génère des citations inspirantes pour égayer votre journée.",
   },
   {
+    id: 3,
     image: "/maquetteSimplon.png",
     title: "Maquette Simplon",
     body: "Création d'un site web avec une version responsive en utilisant HTML et CSS, en m'inspirant d'une maquette Figma pour assurer une conception harmonieuse sur différentes tailles d'écrans.",
@@ -33,8 +37,21 @@ const projects = [
   <ul role="list" class="link-card-grid">
     {
       projects.map((item) => (
-        <Card image={item.image} title={item.title} body={item.body} />
+        <>
+          <Card image={item.image} title={item.title} body={item.body} />
+        </>
       ))
     }
+
+    <button id="modal1-trigger">Modal 1</button>
+    <button id="modal2-trigger">Modal 2</button>
+    <Modal triggerId="modal1-trigger" title="Modal 1">
+      <p>Why hello, I be the <strong>first</strong> Modal.</p>
+    </Modal>
+    <Modal triggerId="modal2-trigger" title="Modal 2" closeText="Cancel">
+      <p>Ah yes, and I be the <strong>second</strong> Modal.</p>
+
+      <button onclick="closeModal()">Confirm action</button>
+    </Modal>
   </ul>
 </Layout>
