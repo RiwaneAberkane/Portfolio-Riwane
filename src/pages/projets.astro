@@ -10,6 +10,9 @@ const projects = [
     image: "/biomarket.png",
     title: "Biomarket",
     body: "Conception d'une application de gestion de stock pour une entreprise fictive en utilisant la stack MERN afin de valider mon titre de développeur web et web mobile.",
+    article:
+      "lorem ipsum dolor sit amet, consectetur adip element nisl, sed do eiusmod tempor incid id dolor. Ut enim ad minim veniam, eiusmod tempor incid id dolor. Lorem ipsum dolor sit amet con etiam. Lorem ipsum dolor sit amet co. lorem ipsum dolor sit amet, consectetur adip element nisl, sed do eiusmod tempor incid id dolor. Ut enim ad minim veniam, eiusmod tempor incid id dolor. Lorem ipsum dolor sit amet con etiam. Lorem ipsum dolor sit amet co. lorem ipsum dolor sit amet, consectetur adip element nisl, sed do eiusmod tempor incid id dolor. Ut enim ad minim veniam, eiusmod tempor incid id dolor. Lorem ipsum dolor sit amet con etiam. Lorem ipsum dolor sit amet co. lorem ipsum dolor sit amet, consectetur adip element nisl, sed do eiusmod tempor incid id dolor. Ut enim ad minim veniam, eiusmod tempor incid id dolor. Lorem ipsum dolor sit amet con etiam. Lorem ipsum dolor sit amet co",
+    github: "https://github.com/RiwaneAberkane/Biomarket_MERN",
   },
   {
     idmodal: "modal2-trigger",
@@ -42,9 +45,15 @@ const projects = [
             <Card image={item.image} title={item.title} body={item.body} />
           </button>
 
-          <Modal triggerId={item.idmodal} title="Modal 1">
-            <p>{item.title}</p>
-            <img src={item.image} alt="" />
+          <Modal triggerId={item.idmodal}>
+            <h2>{item.title}</h2>
+            <p>{item.article}</p>
+            <p>
+              Lien vers le repo :{" "}
+              <a href={item.github}>
+                https://github.com/RiwaneAberkane/Biomarket_MERN
+              </a>
+            </p>
           </Modal>
         </li>
       ))
@@ -53,6 +62,9 @@ const projects = [
 </Layout>
 
 <style>
+  h3 {
+    font-size: 2rem;
+  }
   button {
     background: transparent;
     border: 0;
@@ -62,5 +74,15 @@ const projects = [
 
   li {
     list-style: none;
+  }
+
+  .img-modal {
+    width: 60%;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    text-decoration: underline;
   }
 </style>

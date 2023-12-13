@@ -2,15 +2,32 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 const pageTitle = "Blog";
+
+const blogs = [
+  {
+    idmodal: "1",
+    image: "/simplon.png",
+    title: "Simplon",
+    body: "Mon expérience en tant qu'apprenti chez Simplon... (À venir)",
+  },
+];
 ---
 
 <Layout pageTitle={pageTitle}>
   <h2>Blog</h2>
   <ul role="list" class="link-card-grid">
-    <Card
-      image="/simplon.png"
-      title="Simplon"
-      body="Mon expérience en tant qu'apprenti chez Simplon... (À venir)"
-    />
+    {
+      blogs.map((item) => (
+        <li>
+          <Card image={item.image} title={item.title} body={item.body} />
+        </li>
+      ))
+    }
   </ul>
 </Layout>
+
+<style>
+  li {
+    list-style: none;
+  }
+</style>

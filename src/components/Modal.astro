@@ -1,20 +1,16 @@
 ---
 interface Props {
   triggerId: string;
-  title: string;
   closeText?: string;
   children?: HTMLElement | HTMLElement[];
 }
 
-const { triggerId, title, closeText = "Close" } = Astro.props;
+const { triggerId, closeText = "Close" } = Astro.props;
 ---
 
 <dialog class="modal" aria-labelledby={triggerId}>
   <div class="modal__inner">
     <div class="modal__content">
-      <h3 tabindex="-1">
-        {title}
-      </h3>
       <slot>Modal description.</slot>
     </div>
     <div class="modal__close">
@@ -173,13 +169,12 @@ const { triggerId, title, closeText = "Close" } = Astro.props;
   }
 
   :where(.modal) {
-    color: black;
-    background-color: white;
-    border: 0.5rem solid black;
+    color: #fdebf3;
+    background-color: #1e1e2e;
     border-radius: 1rem;
     padding: 0;
-    max-height: 70vh;
-    width: min(800px, 70vw);
+    max-height: 90vh;
+    width: min(700px, 70vw);
   }
 
   .modal__inner {
@@ -202,10 +197,10 @@ const { triggerId, title, closeText = "Close" } = Astro.props;
 
   .modal__close button {
     border: none;
-    background-color: lightgrey;
+    background-color: transparent;
     border-bottom-left-radius: 0.4rem;
     border-bottom-right-radius: 0.4rem;
-    color: black;
+    color: #fdebf3;
     text-align: right;
     transition: background-color 0.15s ease-in-out;
     width: 100%;
