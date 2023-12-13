@@ -5,10 +5,10 @@ interface Props {
   body: string;
 }
 
-const { image, title, body} = Astro.props;
+const { image, title, body } = Astro.props;
 ---
 
-<li class="link-card">
+<div class="link-card">
   <div class="empty-div"></div>
   <div class="img">
     <img
@@ -25,23 +25,13 @@ const { image, title, body} = Astro.props;
   <p class="card-txt">
     {body}
   </p>
-</li>
+</div>
 
 <style>
   .link-card {
     list-style: none;
-    /* display: flex; */
     background-size: 400%;
-    /* padding: 20px; */
   }
-
-  /* .empty-div {
-    width: 100%;
-    text-decoration: none;
-    line-height: 1.4;
-    border-radius: 8px;
-    color: #fdebf3;
-  } */
 
   .img {
     text-align: center;
