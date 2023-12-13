@@ -6,21 +6,25 @@ const pageTitle = "Projets";
 
 const projects = [
   {
+    idmodal: "modal1-trigger",
     image: "/biomarket.png",
     title: "Biomarket",
     body: "Conception d'une application de gestion de stock pour une entreprise fictive en utilisant la stack MERN afin de valider mon titre de développeur web et web mobile.",
   },
   {
+    idmodal: "modal2-trigger",
     image: "/restaurantApp.png",
     title: "Restaurant App",
     body: "Création d'une application React qui utilise les hooks afin d'enregistrer les restaurants préférés des utilisateurs via le stockage local.",
   },
   {
+    idmodal: "modal3-trigger",
     image: "/selfCare.png",
     title: "CitatioNinja",
     body: "Développement d'une petite application en JavaScript qui génère des citations inspirantes pour égayer votre journée.",
   },
   {
+    idmodal: "modal4-trigger",
     image: "/maquetteSimplon.png",
     title: "Maquette Simplon",
     body: "Création d'un site web avec une version responsive en utilisant HTML et CSS, en m'inspirant d'une maquette Figma pour assurer une conception harmonieuse sur différentes tailles d'écrans.",
@@ -34,21 +38,35 @@ const projects = [
     {
       projects.map((item) => (
         <>
-          <Card image={item.image} title={item.title} body={item.body} />
+          <button id={item.idmodal}>
+            <Card image={item.image} title={item.title} body={item.body} />
+          </button>
+
+          <Modal triggerId={item.idmodal} title="Modal 1">
+            <p>{item.title}</p>
+          </Modal>
         </>
       ))
     }
 
-    <button id="modal1-trigger">Modal 1</button>
-    <button id="modal2-trigger">Modal 2</button>
+    <!-- <button id={projects[0].idmodal}>Modal</button>
+    <Card
+      image={projects[0].image}
+      title={projects[0].title}
+      body={projects[0].body}
+    />
 
-    <Modal triggerId="modal1-trigger" title="Modal 1">
-      <p>Why hello, I be the <strong>first</strong> Modal.</p>
-    </Modal>
-    <Modal triggerId="modal2-trigger" title="Modal 2" closeText="Cancel">
-      <p>Ah yes, and I be the <strong>second</strong> Modal.</p>
-
-      <button onclick="closeModal()">Confirm action</button>
-    </Modal>
+    <Modal triggerId={projects[0].idmodal} title="Modal 1">
+      <p>{projects[0].title}</p>
+    </Modal> -->
   </ul>
 </Layout>
+
+<style>
+  button {
+    background: transparent;
+    border: 0;
+    display: flex;
+    color: white;
+  }
+</style>
