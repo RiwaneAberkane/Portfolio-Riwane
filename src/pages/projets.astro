@@ -10,8 +10,9 @@ const projects = [
     image: "/biomarket.png",
     title: "Biomarket",
     body: "Conception d'une application de gestion de stock pour une entreprise fictive en utilisant la stack MERN afin de valider mon titre de développeur web et web mobile.",
+    titlemodal: "",
     article:
-      "lorem ipsum dolor sit amet, consectetur adip element nisl, sed do eiusmod tempor incid id dolor. Ut enim ad minim veniam, eiusmod tempor incid id dolor. Lorem ipsum dolor sit amet con etiam. Lorem ipsum dolor sit amet co. lorem ipsum dolor sit amet, consectetur adip element nisl, sed do eiusmod tempor incid id dolor. Ut enim ad minim veniam, eiusmod tempor incid id dolor. Lorem ipsum dolor sit amet con etiam. Lorem ipsum dolor sit amet co. lorem ipsum dolor sit amet, consectetur adip element nisl, sed do eiusmod tempor incid id dolor. Ut enim ad minim veniam, eiusmod tempor incid id dolor. Lorem ipsum dolor sit amet con etiam. Lorem ipsum dolor sit amet co. lorem ipsum dolor sit amet, consectetur adip element nisl, sed do eiusmod tempor incid id dolor. Ut enim ad minim veniam, eiusmod tempor incid id dolor. Lorem ipsum dolor sit amet con etiam. Lorem ipsum dolor sit amet co",
+      "Découvrez Biomarket, une entreprise fictive créée pour valider ma formation en développement web et mobile. Guidé par des principes écoresponsables, ce projet utilise la stack MERN pour une base technique solide. Avec des user stories axées sur l'éco-responsabilité, une gestion éthique des utilisateurs via JWT, et une interface réactive en React, Biomarket représente une vision inspirante de la gestion commerciale du futur. Explorez les améliorations futures pour une expérience utilisateur de qualité et une entreprise toujours plus écoresponsable.",
     github: "https://github.com/RiwaneAberkane/Biomarket_MERN",
   },
   {
@@ -49,6 +50,7 @@ const projects = [
           </button>
 
           <Modal triggerId={item.idmodal}>
+
             <h2>{item.title}</h2>
             <p>{item.article}</p>
             <p>
@@ -68,11 +70,13 @@ const projects = [
   h3 {
     font-size: 2rem;
   }
+
   button {
     background: transparent;
     border: 0;
     display: flex;
     color: white;
+    cursor: pointer;
   }
 
   li {
