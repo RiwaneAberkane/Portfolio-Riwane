@@ -2,41 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Modal from "../components/Modal.astro";
+import { projects } from "../data/projectsData";
 const pageTitle = "Projets";
-
-const projects = [
-  {
-    idmodal: "modal1-trigger",
-    image: "/biomarket.png",
-    title: "Biomarket",
-    body: "Conception d'une application de gestion de stock pour une entreprise fictive en utilisant la stack MERN afin de valider mon titre de développeur web et web mobile.",
-    titlemodal: "",
-    article:
-      "Découvrez Biomarket, une entreprise fictive créée pour valider ma formation en développement web et mobile. Guidé par des principes écoresponsables, ce projet utilise la stack MERN pour une base technique solide. Avec des user stories axées sur l'éco-responsabilité, une gestion éthique des utilisateurs via JWT, et une interface réactive en React, Biomarket représente une vision inspirante de la gestion commerciale du futur. Explorez les améliorations futures pour une expérience utilisateur de qualité et une entreprise toujours plus écoresponsable.",
-    github: "https://github.com/RiwaneAberkane/Biomarket_MERN",
-  },
-  {
-    idmodal: "modal2-trigger",
-    image: "/restaurantApp.png",
-    title: "Restaurant App",
-    body: "Création d'une application React qui utilise les hooks afin d'enregistrer les restaurants préférés des utilisateurs via le stockage local.",
-    github: "https://github.com/RiwaneAberkane/restaurant-app",
-  },
-  {
-    idmodal: "modal3-trigger",
-    image: "/selfCare.png",
-    title: "CitatioNinja",
-    body: "Développement d'une petite application en JavaScript qui génère des citations inspirantes pour égayer votre journée.",
-    github: "https://github.com/RiwaneAberkane/self-care-center",
-  },
-  {
-    idmodal: "modal4-trigger",
-    image: "/maquetteSimplon.png",
-    title: "Maquette Simplon",
-    body: "Création d'un site web avec une version responsive en utilisant HTML et CSS, en m'inspirant d'une maquette Figma pour assurer une conception harmonieuse sur différentes tailles d'écrans.",
-    github: "https://github.com/RiwaneAberkane/MaquetteSimplon",
-  },
-];
 ---
 
 <Layout pageTitle={pageTitle}>
@@ -50,10 +17,17 @@ const projects = [
           </button>
 
           <Modal triggerId={item.idmodal}>
-
-            <h2>{item.title}</h2>
+            <h2>{item.titlemodal}</h2>
             <p>{item.article}</p>
-            <p>
+            <h3 class="tech-used-title">Technos utilisées</h3>
+            <ul class="ul-stack">
+              {item.stackmodal.map((itemStack) => (
+                <li>
+                  <img width="46" height="46" alt="Bootstrap" src={itemStack} />
+                </li>
+              ))}
+            </ul>
+            <p class="repoGithub">
               Lien vers le repo :{" "}
               <a href={item.github} target="_blank">
                 GITHUB
@@ -69,6 +43,28 @@ const projects = [
 <style>
   h3 {
     font-size: 2rem;
+  }
+
+  .ul-stack {
+    padding: 0;
+    padding-top: 20px;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .repoGithub {
+    padding-top: 20px;
+    font-size: large;
+    font-weight: bolder;
+  }
+
+  .tech-used-title {
+    text-decoration: underline #375a7f;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
+    font-size: 2.1em;
+    margin-bottom: 0;
+    font-family: "Poppins", sans-serif;
   }
 
   button {
@@ -93,3 +89,4 @@ const projects = [
     text-decoration: underline;
   }
 </style>
+ ../data/projectsData.js
