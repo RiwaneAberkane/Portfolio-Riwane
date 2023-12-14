@@ -4,7 +4,7 @@ export const projects = [
     image: "/biomarket.png",
     title: "Biomarket",
     body: "Conception d'une application de gestion de stock pour une entreprise fictive en utilisant la stack MERN afin de valider mon titre de développeur web et web mobile.",
-    titlemodal: "Biomarket - Gestion Écoresponsable",
+    titlemodal: "Gestion Écoresponsable",
     article:
       "Découvrez Biomarket, une entreprise fictive créée pour valider ma formation en développement web et mobile. Guidé par des principes écoresponsables, ce projet utilise la stack MERN pour une base technique solide. Avec des user stories axées sur l'éco-responsabilité, une gestion éthique des utilisateurs via JWT, et une interface réactive en React, Biomarket représente une vision inspirante de la gestion commerciale du futur. Explorez les améliorations futures pour une expérience utilisateur de qualité et une entreprise toujours plus écoresponsable.",
     stackmodal: [
