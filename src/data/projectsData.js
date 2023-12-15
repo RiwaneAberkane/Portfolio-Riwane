@@ -47,7 +47,10 @@ export const projects = [
     idmodal: "modal4-trigger",
     image: "/selfCare.png",
     title: "CitatioNinja",
+    titlemodal: "Générateur de citations",
     body: "Développement d'une petite application en JavaScript qui génère des citations inspirantes pour égayer votre journée.",
+    article:
+      "Bienvenue dans CitatioNinja, une petite application personnelle de génération d'affirmations et de mantras. Conçu comme un exercice de pratique, ce projet démontre ma capacité à créer des fonctionnalités interactives à l'aide de JavaScript. En stockant une variété d'affirmations dans un tableau JavaScript, l'application permet aux utilisateurs d'afficher des affirmations ou des mantras de manière aléatoire selon leur demande. Bien que de petite envergure, cet exercice reflète ma compétence à appliquer des concepts avancés dans des projets créatifs et interactifs.",
     stackmodal: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg",
