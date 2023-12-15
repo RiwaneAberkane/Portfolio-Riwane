@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
+import CardProject from "../components/CardProject.astro";
 import Modal from "../components/Modal.astro";
 import { projects } from "../data/projectsData";
 const pageTitle = "Projets";
@@ -13,7 +13,11 @@ const pageTitle = "Projets";
       projects.map((item) => (
         <li>
           <button id={item.idmodal}>
-            <Card image={item.image} title={item.title} body={item.body} />
+            <CardProject
+              image={item.image}
+              title={item.title}
+              body={item.body}
+            />
           </button>
 
           <Modal triggerId={item.idmodal}>
