@@ -23,16 +23,23 @@ const pageTitle = "Projets";
             <ul class="ul-stack">
               {item.stackmodal.map((itemStack) => (
                 <li>
-                  <img width="46" height="46" alt="Bootstrap" src={itemStack} />
+                  <img
+                    width="46"
+                    height="46"
+                    alt="Image stack"
+                    src={itemStack}
+                  />
                 </li>
               ))}
             </ul>
+
             <p class="repoGithub">
               Lien vers le repo :{" "}
               <a href={item.github} target="_blank">
                 GITHUB
               </a>
             </p>
+            <p class="mediumLink">Lien medium prochainement ...</p>
           </Modal>
         </li>
       ))
@@ -56,6 +63,14 @@ const pageTitle = "Projets";
     padding-top: 20px;
     font-size: large;
     font-weight: bolder;
+    margin-bottom: 0;
+  }
+
+  .mediumLink {
+    /* font-size: large;
+    font-weight: bolder; */
+    margin: 0;
+    font-style: italic;
   }
 
   .tech-used-title {

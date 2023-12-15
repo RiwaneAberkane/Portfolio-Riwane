@@ -17,16 +17,34 @@ export const projects = [
   },
   {
     idmodal: "modal2-trigger",
+    image: "/maquetteSimplon.png",
+    title: "Maquette Simplon",
+    titlemodal: "Integration maquette web",
+    body: "Création d'un site web avec une version responsive en utilisant HTML et CSS, en m'inspirant d'une maquette Figma pour assurer une conception harmonieuse sur différentes tailles d'écrans.",
+    article:
+      "Dans ce projet, j'ai démontré ma maîtrise des langages HTML, CSS, et JavaScript dans le cadre de ma formation, en intégrant de manière experte la maquette de mon école, SIMPLON. L'accent a été mis sur l'accessibilité, avec l'utilisation extensive de balises sémantiques pour faciliter la navigation des utilisateurs de lecteurs d'écran. Le design responsive, optimisé par des media queries CSS, assure une expérience utilisateur fluide sur divers appareils. Des animations et interactions dynamiques en JavaScript ont été intégrées pour une expérience utilisateur moderne et engageante. Ce projet reflète mon engagement envers l'innovation, la performance, et l'accessibilité dans le développement d'interfaces web.",
+    stackmodal: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg",
+    ],
+    github: "https://github.com/RiwaneAberkane/MaquetteSimplon",
+  },
+  {
+    idmodal: "modal3-trigger",
     image: "/restaurantApp.png",
     title: "Restaurant App",
+    titlemodal: "LocalStorage React",
     body: "Création d'une application React qui utilise les hooks afin d'enregistrer les restaurants préférés des utilisateurs via le stockage local.",
+    article:
+      "Bienvenue dans mon projet de gestion des restaurants favoris, un simple exercice de pratique réalisé au cours de ma formation. Utilisant React et mettant à profit le LocalStorage, cette application démontre ma compétence dans la création d'interfaces dynamiques. Malgré sa simplicité, le projet offre une gestion conviviale des restaurants favoris avec des fonctionnalités réactives et une persistance locale grâce au LocalStorage, illustrant ma capacité à appliquer des concepts avancés dans des exercices de pratique.",
     stackmodal: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     ],
     github: "https://github.com/RiwaneAberkane/restaurant-app",
   },
   {
-    idmodal: "modal3-trigger",
+    idmodal: "modal4-trigger",
     image: "/selfCare.png",
     title: "CitatioNinja",
     body: "Développement d'une petite application en JavaScript qui génère des citations inspirantes pour égayer votre journée.",
@@ -36,17 +54,5 @@ export const projects = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg",
     ],
     github: "https://github.com/RiwaneAberkane/self-care-center",
-  },
-  {
-    idmodal: "modal4-trigger",
-    image: "/maquetteSimplon.png",
-    title: "Maquette Simplon",
-    body: "Création d'un site web avec une version responsive en utilisant HTML et CSS, en m'inspirant d'une maquette Figma pour assurer une conception harmonieuse sur différentes tailles d'écrans.",
-    stackmodal: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg",
-    ],
-    github: "https://github.com/RiwaneAberkane/MaquetteSimplon",
   },
 ];
