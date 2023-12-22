@@ -31,57 +31,15 @@ const pageTitle = "Riwane Aberkane";
     innovants qui transforment les utilisateurs en voyageurs dans un monde
     virtuel où les pixels deviennent des émotions.
   </p>
+
   <div class="button">
-    <a href="/projets/">
+    <a class="projectLink" href="/projets">
       <button>Mes projets</button>
     </a>
+    <a href="/CV_Riwane.pdf" target="_blank">
+      <button>Mon CV</button>
+    </a>
   </div>
-
-  <!-- <h2>Skills</h2>
-  <div class="link-images">
-    <img
-      width="46"
-      height="46"
-      alt="TypeScript"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
-    />
-    <img
-      width="46"
-      height="46"
-      alt="JavaScript"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
-    />
-    <img
-      width="46"
-      height="46"
-      alt="CSS"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
-    />
-    <img
-      width="46"
-      height="46"
-      alt="HTML"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
-    />
-    <img
-      width="46"
-      height="46"
-      alt="Angular"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg"
-    />
-    <img
-      width="46"
-      height="46"
-      alt="Bootstrap"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
-    />
-    <img
-      width="46"
-      height="46"
-      alt="PostGres"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"
-    />
-  </div> -->
 </Layout>
 <style>
   /*about me top*/
@@ -114,17 +72,17 @@ const pageTitle = "Riwane Aberkane";
     transition:
       background-color 0.4s,
       color 0.4s;
+    margin-left: 5px;
+  }
+
+  .projectLink {
+    font-size: 0px;
   }
 
   button:hover {
     background-color: #78c2ad;
     color: #1e1e2e;
     cursor: pointer;
-  }
-
-  /* Skill images */
-  .link-images img {
-    margin: 16px 4px;
   }
 
   @media only screen and (max-width: 600px) {
