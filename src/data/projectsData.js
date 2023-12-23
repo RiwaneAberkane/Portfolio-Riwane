@@ -1,7 +1,7 @@
 export const projects = [
   {
     idmodal: "modal1-trigger",
-    image: "/biomarket.png",
+    image: "/biomarket.webp",
     title: "Biomarket",
     body: "Conception d'une application de gestion de stock pour une entreprise fictive en utilisant la stack MERN afin de valider mon titre de développeur web et web mobile.",
     titlemodal: "Gestion Écoresponsable",
@@ -17,7 +17,7 @@ export const projects = [
   },
   {
     idmodal: "modal2-trigger",
-    image: "/maquetteSimplon.png",
+    image: "/maquetteSimplon.webp",
     title: "Maquette Simplon",
     titlemodal: "Integration maquette web",
     body: "Création d'un site web avec une version responsive en utilisant HTML et CSS, en m'inspirant d'une maquette Figma pour assurer une conception harmonieuse sur différentes tailles d'écrans.",
@@ -32,7 +32,7 @@ export const projects = [
   },
   {
     idmodal: "modal3-trigger",
-    image: "/restaurantApp.png",
+    image: "/restaurantApp.webp",
     title: "Restaurant App",
     titlemodal: "LocalStorage React",
     body: "Création d'une application React qui utilise les hooks afin d'enregistrer les restaurants préférés des utilisateurs via le stockage local.",
@@ -45,7 +45,7 @@ export const projects = [
   },
   {
     idmodal: "modal4-trigger",
-    image: "/selfCare.png",
+    image: "/selfCare.webp",
     title: "CitatioNinja",
     titlemodal: "Générateur de citations",
     body: "Développement d'une petite application en JavaScript qui génère des citations inspirantes pour égayer votre journée.",
