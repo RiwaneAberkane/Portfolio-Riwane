@@ -58,4 +58,19 @@ export const projects = [
     ],
     github: "https://github.com/RiwaneAberkane/self-care-center",
   },
+  {
+    idmodal: "modal5-trigger",
+    image: "/pokeApi.webp",
+    title: "PokeApi",
+    titlemodal: "Explorateur de Pokémon",
+    body: "Développement d'une application avec React permettant d'explorer les données de l'API Pokémon. Le projet met en avant ma capacité à manipuler des données distantes, à filtrer des résultats et à assurer une maintenabilité du code.",
+    article:
+      "Bienvenue dans PokeDex, un projet personnel d'exploration de l'API Pokémon. Cette application démontre ma compétence à interagir avec des API distantes, en l'occurrence l'API Pokémon, à filtrer les résultats en fonction des critères de recherche et à assurer une maintenabilité du code. L'interface utilisateur intuitive permet aux utilisateurs de rechercher des Pokémon, de filtrer les résultats et de stocker leurs Pokémon préférés dans le local storage.",
+    stackmodal: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg",
+    ],
+    github: "https://github.com/RiwaneAberkane/PokeAPI",
+    web_site: "https://pokemon-api-riri.netlify.app/",
+  },
 ];

@@ -44,6 +44,14 @@ const pageTitle = "Projets";
               </a>
             </p>
             <p class="mediumLink">Lien medium prochainement ...</p>
+            {item.web_site && (
+              <div class="linkWebSiteParagaphe">
+                ***/ Lien vers le site :{" "}
+                <a href={item.web_site} target="_blank">
+                  {item.title}
+                </a>
+              </div>
+            )}
           </Modal>
         </li>
       ))
@@ -108,6 +116,14 @@ const pageTitle = "Projets";
 
   :global(.light) a {
     color: black;
+  }
+
+  .linkWebSiteParagaphe {
+    font-size: 1.2rem;
+    border: 3px solid #365a7f;
+    padding: 8px;
+    font-weight: bold;
+    font-style: italic;
   }
 
   @keyframes fade-in {
